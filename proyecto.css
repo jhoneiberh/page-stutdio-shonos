@@ -1,0 +1,562 @@
+:root
+{
+    --blue-primary: #3101ff;
+    --color-background-primary: #fff1fd;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+
+
+header
+{
+    width: 100%;
+    height: 80px;  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 80px;
+}
+
+/* Section Logo */
+.logo-container
+{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    margin-left: 50px;
+
+}
+
+
+.logo-image
+{
+    height: 60%;
+    justify-self: end;
+}
+
+.logo-title
+{
+    font-size: 2rem;
+    font-family: 'DM sans';
+    text-transform: uppercase;
+    padding: 0 8px;
+}
+
+
+/* Section Navigation */
+
+.header-nav
+{
+    width: 100%;
+    display: grid;
+}
+
+.header-nav .list-nav
+{
+    justify-self: end;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+/* Items Nav */
+
+.header-nav .list-nav li
+{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    padding: 3px 8px;
+    background-color: rgba(241, 18, 241, 0.084);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-nav .list-nav li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* Bottom Descargar */
+
+.header-nav .list-nav .header-download-bottom
+{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    margin-left: 5px;
+    background-color: rgb(0, 47, 255);
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.header-nav .list-nav .header-download-bottom a
+{
+    color: white;
+}
+
+
+/* Section Main */
+
+main
+{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.presentation-app-phone
+{
+    width: 90%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+/* Description App Phone */
+.presentation-descrip-app-phone
+{
+    display: flex;
+    width: 100%;
+    height: inherit;
+    flex-direction: column;
+    gap: 15px;
+    font-family: Montserrat;
+    
+}
+
+.presentation-descrip-app-phone h1
+{
+    font-size: 4.4rem;
+    font-weight: 900;
+    font-family: 'Montserrat';
+}
+
+.presentation-descrip-app-phone p
+{
+    font-size: 1.4rem;
+    color: #555555;
+}
+.presentation-descrip-app-phone a
+{
+    color: white;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    /* padding: 10px 30px; */
+    padding-top: 12px;
+    border-radius: 20px;
+    background-color: var(--blue-primary);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+
+/* Image Presentation */
+
+.image-presentation
+{
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.image-presentation img
+{
+    width: 100%;
+    height: 120%;
+    object-fit: contain;
+}
+
+
+
+/* Section Features */
+
+.features
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff1fd;
+    margin-top: 70px;
+    
+}
+
+.features h2
+{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+/* Items */
+
+
+.features-item
+{
+    width: 90%;
+    height: 300px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+    justify-content: center ;
+    align-items: center;
+    margin: 0 auto;
+    column-gap: 50px;
+    text-align: center;
+}
+
+.item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item figure
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.item figure img
+{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.item h4
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: Montserrat;
+}
+
+.item p
+{
+    font-size: 1.2rem;
+    font-family: Montserrat;
+}
+
+
+
+
+/* Section commitment Compromiso */
+.commitment-app
+{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    padding: 0 60px;
+    font-family: Montserrat;
+}
+
+/* Div Left */
+
+.commitment-society
+{
+    padding: 0 50px;
+}
+.commitment-society h3
+{
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+
+/* Div Right */
+
+.commitment-features
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.commitment-features-item
+{
+    display: flex;
+    gap: 10px;
+}
+
+
+.commitment-features-item > p
+{
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: var(--blue-primary);
+    line-height: 3rem;
+}
+
+.commitment-features-item h3
+{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.commitment-features-item div p
+{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 2.2rem;
+    padding-right: 50px;
+}
+
+
+/* Section Plans */
+
+.plans-pay
+{
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-background-primary);
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-pay .plans-pay--title
+{
+    margin-bottom: 50px;
+}
+
+.plans-pay .plans-pay--title h3
+{
+    font-size: 2.4rem;
+}
+
+
+/* Section Item Plans Pay */
+
+.plans-pay--items
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.plans-pay--items > div
+{
+    background-color: white;
+    width: 20%;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+
+.plans-pay--items h4
+{
+    font-size: 1.4rem;
+}
+
+.plans-pay--items > div button
+{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: rgb(0, 47, 255);
+    border-radius: 20px;
+    text-transform: uppercase;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 12px;
+    left: 30px;
+    right: 30px;
+}
+
+.plans-pay--items > div h4
+{
+    margin-bottom: 10px;
+}
+
+.plans-pay--items > div p
+{
+    color: var(--blue-primary);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+
+
+.plans-pay--items > div ul
+{
+    padding-left: 15px;
+    bottom: 0;
+}
+
+/* Plans Image */
+
+.plans-pay--items img
+{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    left: 50px;
+    bottom: 170px;
+}
+
+
+/* Plan Personalizando */
+
+.plans-pay--items > div a
+{
+    margin-bottom: 20px;
+    color: var(--blue-primary);
+}
+
+.plans-pay--items > div:last-child ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* Disponibily Apps */
+
+.disponibility-app
+{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Montserrat;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.disponobility-text
+{
+    padding: 0 120px;
+    margin-bottom: 30px;
+}
+.disponobility-text h3
+{
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.disponobility-text p
+{
+    font-size: 1.6rem;
+}
+
+/* Buttons Apps */
+
+.disponi-apps-buttons .apps-buttons p
+{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.disponi-apps-buttons 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.disponi-apps-buttons img
+{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.disponi-apps-buttons .apps-buttons
+{
+    background-color: black;
+    width: 250px;
+    height: 70px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 0 18px;
+    text-align: start;
+}
+
+/* Section Footer */
+
+footer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: linear-gradient(to right bottom, #3101ff, #7100fa, #9600f5, #b300f0, #cb12eb);
+    font-family: Montserrat;
+    color: white;
+    padding: 0 100px;
+}
+
+footer h4
+{
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+footer p
+{
+    font-size: 1.6rem;
+}
+
+footer .info
+{
+    margin-top: 50px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: 80px;
+}
